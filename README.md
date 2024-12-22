@@ -1,2 +1,2 @@
 # school-portal
-# who can use for student ,admin and teacher
+# who can use for student ,admin and teachers
