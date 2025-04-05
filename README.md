@@ -1,51 +1,176 @@
 # School Portal
 
-This is a [Next.js](https://nextjs.org) project for a **School Portal** application, designed to streamline communication and management between students, teachers, and administrators.
+A comprehensive full-stack school portal designed for **Students**, **Admins**, and **Teachers**. This platform simplifies management and communication within a school environment by integrating features such as attendance tracking, class management, results, notifications, and more.
 
-## Getting Started
+---
 
-First, run the development server:
+## 🚀 Features
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+### For Students:
+- 📅 View class schedules and assignments.
+- 📈 Access exam results and attendance records.
+- 🔔 Receive notifications and announcements.
+
+### For Teachers:
+- 📝 Manage student attendance.
+- ✅ Assign and evaluate exams.
+- 📢 Post announcements and updates.
+
+### For Admins:
+- 👥 Manage users (Students, Teachers, Admins).
+- 🏫 Create and assign classes.
+- 📊 Generate reports and analytics.
+
+---
+
+## 🛠️ Technologies Used
+
+### Frontend:
+- **React.js** (with Context API/Redux for state management)
+- **CSS**/TailwindCSS for styling
+- **Axios** for API integration
+
+### Backend:
+- **Node.js** with **Express.js**
+- **MongoDB** as the database
+- **JWT** for authentication
+
+### Design:
+- **Figma** for UI/UX design
+
+### Others:
+- **Postman** for API testing
+- **Git** and **GitHub** for version control
+
+---
+
+## ⚙️ Setup and Installation
+
+### Prerequisites:
+1. [Node.js](https://nodejs.org/) installed on your system.
+2. [MongoDB](https://www.mongodb.com/) installed locally or set up using MongoDB Atlas.
+3. [Git](https://git-scm.com/) installed.
+
+### Steps:
+
+1. **Clone the Repository:**
+   ```bash
+   git clone https://github.com/your-username/school-portal.git
+   cd school-portal
+   ```
+
+2. **Install Dependencies:**
+   - Navigate to the backend directory and install dependencies:
+     ```bash
+     cd backend
+     npm install
+     ```
+   - Navigate to the frontend directory and install dependencies:
+     ```bash
+     cd ../frontend
+     npm install
+     ```
+
+3. **Set Up Environment Variables:**
+   - Create a `.env` file in the `backend` directory with the following variables:
+     ```env
+     PORT=5000
+     MONGO_URI=your_mongodb_connection_string
+     JWT_SECRET=your_jwt_secret
+     ```
+
+4. **Run the Application:**
+   - Start the backend server:
+     ```bash
+     cd backend
+     npm start
+     ```
+   - Start the frontend server:
+     ```bash
+     cd ../frontend
+     npm start
+     ```
+
+5. **Access the Application:**
+   - Open your browser and navigate to `http://localhost:3000`.
+
+---
+
+## 📂 Folder Structure
+
+### Backend (`/backend`):
+```
+backend/
+├── src/
+│   ├── controllers/
+│   ├── middlewares/
+│   ├── models/
+│   ├── routes/
+│   ├── services/
+│   └── utils/
+├── .env
+├── package.json
+└── server.js
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### Frontend (`/frontend`):
+```
+frontend/
+├── public/
+├── src/
+│   ├── components/
+│   ├── pages/
+│   ├── context/
+│   ├── services/
+│   └── App.js
+├── package.json
+└── index.js
+```
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+---
 
-## Features
+## 🎯 Usage
 
-- **Student Dashboard**: View grades, assignments, and announcements.
-- **Teacher Dashboard**: Manage classes, assignments, and communicate with students.
-- **Admin Panel**: Oversee school operations, manage users, and generate reports.
-- **Authentication**: Secure login for students, teachers, and administrators.
-- **Responsive Design**: Optimized for both desktop and mobile devices.
+### Admin Login:
+- Use default credentials (set in backend seed data) to log in as an admin.
 
-## Technologies Used
+### Creating Users:
+- Admins can create accounts for students and teachers.
 
-- **Next.js**: Framework for building the application.
-- **Tailwind CSS**: For styling and responsive design.
-- **MongoDB**: Database for storing user and school data.
-- **NextAuth.js**: Authentication and session management.
+### Viewing Reports:
+- Admins can generate detailed reports from the dashboard.
 
-## Learn More
+---
 
-To learn more about Next.js, take a look at the following resources:
+## 🎨 Figma Design
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+The entire design process, including wireframes and prototypes, was carried out in **Figma**.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+**Figma Link:** [School Portal Design](https://www.figma.com/file/example-link)
 
-## Deploy on Vercel
+---
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## 🤝 Contributing
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+We welcome contributions to make this project even better! Here’s how you can contribute:
+
+1. Fork the repository.
+2. Create a feature branch:
+   ```bash
+   git checkout -b feature-name
+   ```
+3. Commit your changes:
+   ```bash
+   git commit -m "Add a new feature"
+   ```
+4. Push to the branch:
+   ```bash
+   git push origin feature-name
+   ```
+5. Open a pull request.
+
+---
+
+## 📄 License
+
+This project is licensed under the MIT License. See the `LICENSE` file for more details.
